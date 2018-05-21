@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>BusBlog</title>
+    <title>DIY Camper Reviews</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,6 +9,16 @@
   </head>
 
   <body>
+
+
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+
+    <%= link_to "Home", root_path %>
+    <%= link_to "About", pages_about_path %>
+    <%= link_to "Contact", pages_contact_path %>
+    <%= link_to "Recommended Products", pages_products_path %>
+
     <%= yield %>
   </body>
 </html>
